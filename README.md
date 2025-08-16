@@ -23,12 +23,7 @@ Includes synthetic data generation, model training, and a Streamlit app for inte
 git clone https://github.com/theguyingreyhoodie/air-quality-predictor.git
 cd air-quality-predictor
 
- 2. (Optional) Create and activate a virtual environment:
-python -m venv venv
- On Windows:
-.\venv\Scripts\activate
- On Mac/Linux:
-source venv/bin/activate
+ 2. (Optional) Create and activate a virtual environment.
 
  3. Install dependencies:
 pip install -r requirements.txt
