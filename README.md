@@ -17,24 +17,36 @@ Includes synthetic data generation, model training, and a Streamlit app for inte
 <img width="704" height="400" alt="newplot (3)" src="https://github.com/user-attachments/assets/186064a5-47f1-4d18-b740-0fedb0c740e0" />
 <img width="1919" height="866" alt="Screenshot 2025-08-16 185525" src="https://github.com/user-attachments/assets/f8583196-38b7-4a3b-9050-f3d9fb017f22" />
 
-## Installation
+# Installation
 
-# 1. Clone the repository:
+ 1. Clone the repository:
 git clone https://github.com/theguyingreyhoodie/air-quality-predictor.git
 cd air-quality-predictor
 
-# 2. (Optional) Create and activate a virtual environment:
+ 2. (Optional) Create and activate a virtual environment:
 python -m venv venv
-# On Windows:
+ On Windows:
 .\venv\Scripts\activate
-# On Mac/Linux:
+ On Mac/Linux:
 source venv/bin/activate
 
-# 3. Install dependencies:
+ 3. Install dependencies:
 pip install -r requirements.txt
 
-# 4. (Optional, for real data) Set your OpenWeatherMap API key:
-# On Windows:
+ 4. (Optional, for real data) Set your OpenWeatherMap API key:
+ On Windows:
 set OWM_API_KEY=your_key_here 
-# On Mac/Linux:
+ On Mac/Linux:
 export OWM_API_KEY=your_key_here
+
+## Usage
+
+1. Generate data (synthetic or real):
+python scripts/data_collector.py
+
+2. Train the model:
+python scripts/train_model.py
+
+3. Launch dashboard:
+streamlit run app/streamlit_app.py
+
